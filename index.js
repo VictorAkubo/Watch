@@ -4,14 +4,14 @@ const cors = require("cors");
 
 const io = require("socket.io")(server, {
 	cors: {
-		origin: "https://ubiquitous-doodle-5gqg445q6jpx34674-3000.app.github.dev",
+		origin: "*",
 		methods: [ "GET", "POST" ]
 	}
 });
 
 app.use(cors());
 
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
 	res.send('Running');
@@ -33,5 +33,4 @@ io.on("connection", (socket) => {
 	});
 });
 
-/*server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));*/
-server.listen(PORT, "0.0.0.0", () => console.log(`Server running on port ${PORT}`));
+server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));

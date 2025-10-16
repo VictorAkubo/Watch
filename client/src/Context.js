@@ -5,7 +5,7 @@ import Peer from 'simple-peer';
 const SocketContext = createContext();
 
 //const socket = io('http://localhost:5000');
-const socket = io("https://ubiquitous-doodle-5gqg445q6jpx34674-6000.app.github.dev");
+const socket = io("https://watch-two-orpin.vercel.app");
 
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);
