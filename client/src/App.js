@@ -32,7 +32,7 @@ const App = () => {
   return (
     <Wrapper>
       <StyledAppBar position="static" color="inherit">
-        <Typography variant="h2" align="center">Video Chat</Typography>
+        <Typography variant="h2" align="center">Watch</Typography>
       </StyledAppBar>
       <VideoPlayer />
       <Sidebar>
